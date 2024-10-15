@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card Application</title>
+    <link rel="stylesheet" href="StudentApp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student ID Card Application</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required onfocusout="validateName()">
+                <span id="nameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" name="dob" required onfocusout="validateDOB()">
+                <span id="dobError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" readonly>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required onfocusout="validateMobile()">
+                <span id="mobileError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="text" id="email" name="email" required onfocusout="validateEmail()">
+                <span id="emailError" class="error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="StudentApp.js"></script>
+</body>
+</html>
